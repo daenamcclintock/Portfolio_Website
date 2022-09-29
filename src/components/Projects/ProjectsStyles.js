@@ -119,6 +119,18 @@ transition: 0.5s;
 }
 `;
 
+export const WebsiteUnderConstruction = styled.a`
+color:#d4c0c0;
+font-size: 1.6rem;
+padding:1rem 1.5rem;
+border-radius: 15px;
+transition: 0.5s;
+`
+
+export const TagListDiv = styled.div`
+
+`
+
 export const TagList = styled.ul`
 display: flex;
 justify-content: space-around;
