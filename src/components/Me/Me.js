@@ -11,7 +11,7 @@ import { MdFileDownload } from "react-icons/md";
 import Three from "../ThreeJS/Three";
 import Earth from "../Earth/Earth";
 import Bitcoin from "../ThreeJS/Bitcoin";
-// import Three from "../ThreeJS/Three";'
+import { Canvas, Suspense } from '@react-three/fiber'
 
 const customStyles = {
   content: {
@@ -97,7 +97,7 @@ const Me = ({ open }) => {
               <pointLight color={0x44ff88} intensity={1} position={[1, 2, 3]} />
               <pointLight color={0xdd3311} intensity={1} position={[0, 3, 2]} />
               <Suspense>
-              <Three position={[-3, 1, 2]}/>
+              <Bitcoin position={[-3, 1, 2]}/>
               </Suspense>
             </Canvas> */}
           </div>
