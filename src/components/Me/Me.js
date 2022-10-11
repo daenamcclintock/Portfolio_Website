@@ -12,6 +12,7 @@ import Three from "../ThreeJS/Three";
 import Earth from "../Earth/Earth";
 import Bitcoin from "../ThreeJS/Bitcoin";
 import { Canvas, Suspense } from '@react-three/fiber'
+import Box from "../ThreeJS/Box";
 
 const customStyles = {
   content: {
@@ -91,13 +92,19 @@ const Me = ({ open }) => {
                 </Link>
           </Container>
           <div>
+          {/* <Canvas>
+            <ambientLight />
+            <pointLight position={[10, 10, 10]} />
+            <Box position={[-1.2, 0, 0]} />
+            <Box position={[1.2, 0, 0]} />
+          </Canvas> */}
             {/* <Canvas>
               <ambientLight color={0xffffff} intensity={0.5} />
               <pointLight color={0xff4422} intensity={1} position={[-1, -1, 3]} />
               <pointLight color={0x44ff88} intensity={1} position={[1, 2, 3]} />
               <pointLight color={0xdd3311} intensity={1} position={[0, 3, 2]} />
               <Suspense>
-              <Bitcoin position={[-3, 1, 2]}/>
+              <Three position={[-3, 1, 2]}/>
               </Suspense>
             </Canvas> */}
           </div>
