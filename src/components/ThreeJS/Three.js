@@ -6,10 +6,6 @@ import { NavItem } from 'react-bootstrap'
 import { MdDoNotDisturbOnTotalSilence } from 'react-icons/md'
 
 const Three = (props) => {
-    const bitcoin = require('./Bitcoin.png');
-    console.log('this is bitcoin', bitcoin)
-    bitcoin.width = 1
-    bitcoin.height = 1
     // This reference gives us direct access to the THREE.Mesh object
   const ref = useRef()
   // Hold state for hovered and clicked events
@@ -18,7 +14,7 @@ const Three = (props) => {
   // Subscribe this component to the render-loop, rotate the mesh every frame
   useFrame((state, delta) => (ref.current.rotation.x += 0.02, ref.current.rotation.y += 0.05))
   // Return the view, these are regular Threejs elements expressed in JSX
-  const bitcoinTexture = new THREE.TextureLoader().load(bitcoin);
+  const bitcoinTexture = new THREE.TextureLoader().load('');
   const material = new THREE.MeshStandardMaterial({
       map: bitcoinTexture
   })
