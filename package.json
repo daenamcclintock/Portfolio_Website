@@ -12,6 +12,7 @@
     "@coreui/react": "^4.3.0",
     "@emailjs/browser": "^3.6.2",
     "@react-three/fiber": "^8.8.10",
+    "@typeform/embed-react": "^2.1.0",
     "@web3uikit/icons": "^0.1.4",
     "animate.css": "^4.1.1",
     "axios": "^0.27.2",

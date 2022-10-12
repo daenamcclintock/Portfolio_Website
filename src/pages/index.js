@@ -10,6 +10,7 @@ import { BackgroundImage } from '../components/Me/MeStyles';
 import { ReactNotifications, Store } from 'react-notifications-component'
 import 'react-notifications-component/dist/theme.css'
 import 'animate.css/animate.min.css';
+import { Popover } from '@typeform/embed-react'
 
 const Home = () => {
 	const [open, setOpen] = useState(false)
@@ -58,6 +59,7 @@ const Home = () => {
 			<Technologies open={open}/>
 			<Timeline open={open}/>
 			<Contact successNotficiation={successNotficiation} failNotification={failNotification} open={open}/>
+			<Popover id="o2iHrdTU" />
 		</Layout>
 	</>
   );
