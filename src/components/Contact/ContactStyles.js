@@ -300,5 +300,6 @@ export const ContactButton = styled.button`
     transform: scale(1.1);
     cursor: pointer;
     background-color: rgba(46, 204, 113, 0.65);
+    transition: all 0.3s ease-in-out;
   }
   `
