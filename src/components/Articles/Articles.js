@@ -2,41 +2,35 @@ import React from 'react';
 
 import { ProjectCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ArticlesStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { projects } from '../../constants/constants';
+import { articles } from '../../constants/constants';
 
-const Projects = ({ open }) => (
+const Articles = ({ open }) => (
   <Section id="projects" open={open}>
     <SectionDivider />
     <SectionTitle main>All Articles</SectionTitle>
     <GridContainer>
-      {projects.map((project, index) => {
+      {articles.map((article, index) => {
         return (
           <ProjectCard key={index}>
-          <Img src={project.image} />
+          <Img src={article.image} />
             <TitleContent>
-              <HeaderThree title>{project.title}</HeaderThree>
+              <HeaderThree title>{article.title}</HeaderThree>
               <Hr />
             </TitleContent>
-            <CardInfo className="card-info">{project.description}</CardInfo>
+            <CardInfo className="card-info">{article.description}</CardInfo>
             <div>
               <br />
-              <TitleContent><b>Tech Stack</b></TitleContent>
+              <TitleContent><b>Article Themes</b></TitleContent>
               <TagList>
-                {project.tags.map((tag, index) => {
+                {article.tags.map((tag, index) => {
                   return <Tag key={index}>{tag}</Tag>;
                 })}
               </TagList>
             </div>
               <UtilityList>
-                {project.backendCode ? 
-                  <ExternalLinks href={project.backendCode} target="_blank">Backend Code</ExternalLinks>
-                : <p></p>}
-                {project.frontendCode ?
-                  <ExternalLinks href={project.frontendCode} target="_blank">Frontend Code</ExternalLinks>
-                : <p></p>}
-                {project.source ?
-                  <ExternalLinks href={project.source} target="_blank">Website</ExternalLinks>
-                  : <p>No Frontend Website</p>
+                {article.source ?
+                  <ExternalLinks href={article.source} target="_blank">Link to Article</ExternalLinks>
+                  : <p>No Article Link</p>
                 }
               </UtilityList>
           </ProjectCard>
@@ -46,4 +40,4 @@ const Projects = ({ open }) => (
   </Section>
 );
 
-export default Projects;
+export default Articles;

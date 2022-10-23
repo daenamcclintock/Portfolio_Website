@@ -104,3 +104,30 @@ export const TimeLineData = [
   { year: 'Spring 2022', text: "Completed General Assembly's Software Engineering Immersive Program" },
   { year: 'Summer 2022', text: "Contracting as a Fullstack Blockchain Engineer for Cinderblox, a Silicon Valley-based Startup", },
 ];
+
+export const articles = [
+  {
+    title: 'My (Quarter Life Crisis) Career Transition',
+    description: "Why I Left Investment Research for Blockchain Development",
+    image: '/images/Web3Social.png',
+    tags: ['Investments', 'Research', 'Blockchain', 'Software Development'],
+    source: 'https://web3-social-media.netlify.app/',
+    id: 0,
+  },
+  {
+    title: 'The Future of Ethereum',
+    description: "Ethereum Merge - Scalability - Future Software Updates",
+    image: '/images/Web3Social.png',
+    tags: ['Blockchain', 'Ethereum', 'Sharding', 'Software Updates'],
+    source: 'https://web3-social-media.netlify.app/',
+    id: 0,
+  },
+  {
+    title: 'Nomadding Chronicles',
+    description: "What It's Like to Solo Nomad as a Software Developer",
+    image: '/images/Web3Social.png',
+    tags: ['Nomadding', 'Travel', 'Bali', 'Software Developer'],
+    source: 'https://web3-social-media.netlify.app/',
+    id: 0,
+  },
+]
