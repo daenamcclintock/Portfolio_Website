@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: 'CinderBlox',
+    description: "Application focussed on tokenization of commercial real estate assets. Developed with the MERN stack, the application features custom multi-factor authetication, KYC and AML financial screening, as well as trading functionality to buy and sell real estate-backed security tokens. Utilized the AlgoSDK to progammatically deploy security tokens onto the Alorand blockchain and built custom logic for buying, selling, and trading the tokens.",
+    image: '/images/CinderBlox.png',
+    tags: ['Node.js', 'React', 'AlgoSDK', 'Styled-Components'],
+    // source: 'cinderblox.io',
+    backendCode: 'https://github.com/daenamcclintock/CinderBlox_Backend',
+    frontendCode: 'https://github.com/daenamcclintock/Cinderblox_Frontend',
+    id: 0,
+  },
+  {
     title: 'Web3 Social',
     description: "Fullstack social media application built for the web3 community to collaborate. Application features user secure sign in with a web3 wallet, the ability to set owned NFTs as a profile picture, and edit other aspects of the social media profile. Users can post written content as well as photos, which are stored in IPFS and accessed via a Moralis database. Smart contract developed in Solidity, tested with Chai, and deployed using custom Hardhat JS scripts. Frontend built with React and Web3UIKit.",
     image: '/images/Web3Social.png',
@@ -7,7 +17,7 @@ export const projects = [
     source: 'https://web3-social-media.netlify.app/',
     backendCode: 'https://github.com/daenamcclintock/web3_social_media/tree/main/Smart_Contract',
     frontendCode: 'https://github.com/daenamcclintock/web3_social_media/tree/main/web3_social',
-    id: 0,
+    id: 1,
   },
   {
     title: 'NFT Marketplace',
@@ -17,7 +27,7 @@ export const projects = [
     source: 'https://fullstack-nft-marketplace.netlify.app/',
     backendCode: 'https://github.com/daenamcclintock/nft-marketplace-backend-contracts',
     frontendCode: 'https://github.com/daenamcclintock/nft-marketplace-frontend-moralis',
-    id: 1,
+    id: 2,
   },
   // {
   //   title: 'Transfer ETH & NFTs',
@@ -36,7 +46,7 @@ export const projects = [
     tags: ['Solidity', 'Javascript', 'Hardhat', 'Chai'],
     // source: 'www.google.com',
     backendCode: 'https://github.com/daenamcclintock/hardhat-DeFi',
-    id: 2,
+    id: 3,
   },
   {
     title: 'DEX: Decentralized Exchange',
@@ -45,7 +55,7 @@ export const projects = [
     tags: ['HTML', 'CSS', 'Bootstrap', 'Moralis'],
     source: 'https://moralis-dex.netlify.app/',
     frontendCode: 'https://github.com/daenamcclintock/Moralis_DEX',
-    id: 3,
+    id: 4,
   },
   // {
   //   title: 'NFT Social',
@@ -93,7 +103,7 @@ export const projects = [
     tags: ['Javascript', 'Next.js', 'React', 'Three.js'],
     source: 'https://daenamcclintock-portfolio.netlify.app/',
     frontendCode: 'https://github.com/daenamcclintock/Portfolio_Website',
-    id: 4,
+    id: 5,
   },
 ];
 
