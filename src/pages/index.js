@@ -75,27 +75,28 @@ const Home = () => {
 
   return (
 	<>
-		{/* {ipDetected ?
+		{ipDetected ?
 		<div>
 			<h1>Your IP address is: {ip}</h1>
 			<h2>Your location is: {visitor.city}, {visitor.state} {visitor.country_name} {visitor.postal}</h2>
 		</div>
 		:
-		null
-		} */}
-		<ReactNotifications />
-		<Layout open={open} setOpen={setOpen}>
-			<BackgroundImage open={open}>
-				<Section open={open}>
-					<Me open={open} />
-				</Section>
-			</BackgroundImage>
-			<Projects open={open}/>
-			<Technologies open={open}/>
-			<Timeline open={open}/>
-			<Contact successNotficiation={successNotficiation} failNotification={failNotification} open={open}/>
-			<Popover id="o2iHrdTU" />
-		</Layout>
+		<>
+			<ReactNotifications />
+			<Layout open={open} setOpen={setOpen}>
+				<BackgroundImage open={open}>
+					<Section open={open}>
+						<Me open={open} />
+					</Section>
+				</BackgroundImage>
+				<Projects open={open}/>
+				<Technologies open={open}/>
+				<Timeline open={open}/>
+				<Contact successNotficiation={successNotficiation} failNotification={failNotification} open={open}/>
+				<Popover id="o2iHrdTU" />
+			</Layout>
+		</>
+		}
 	</>
   );
 };
