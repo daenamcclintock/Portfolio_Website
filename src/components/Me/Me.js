@@ -45,16 +45,16 @@ const Me = ({ open }) => {
   //   setOpenBurger(openBurgerNav)
   // }
 
-  function openModal() {
+  const openModal = () => {
     setIsOpen(true);
   }
 
-  function afterOpenModal() {
+  const afterOpenModal = () => {
     // references are now sync'd and can be accessed.
     subtitle.style.color = '#f00';
   }
 
-  function closeModal() {
+  const closeModal = () => {
     setIsOpen(false);
   }
 

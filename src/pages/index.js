@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import Contact from '../components/Contact/Contact';
 import Me from '../components/Me/Me';
 import Projects from '../components/Projects/Projects';
@@ -11,9 +11,37 @@ import { ReactNotifications, Store } from 'react-notifications-component'
 import 'react-notifications-component/dist/theme.css'
 import 'animate.css/animate.min.css';
 import { Popover } from '@typeform/embed-react'
+import axios from 'axios';
 
 const Home = () => {
 	const [open, setOpen] = useState(false)
+	const [ip, setIp] = useState(null)
+	const [visitor, setVisitor] = useState(null)
+	const [ipDetected, setIPDetected] = useState(false)
+
+	const getIp = async () => {
+		const res = await axios.get('https://geolocation-db.com/json/')
+		console.log('IP User Data', res.data);
+		setIp(res.data.IPv4)
+		if (res.data.IPv4) {
+			setIPDetected(true)
+		}
+		return res.data
+		
+	}
+	
+	useEffect(() => {
+		const ipInfo = async () => {
+			await getIp()
+				.then((result) => {
+					setVisitor(result)
+				})
+				.catch((error) => {
+					console.log(error)
+				})
+		}
+		ipInfo()
+	})
 
 	const successNotficiation = () => {
 		Store.addNotification({
@@ -48,11 +76,19 @@ const Home = () => {
 
   return (
 	<>
+		{ipDetected ?
+		<div>
+			<h1>Your IP address is: {ip}</h1>
+			<h2>Your location is: {visitor.city}, {visitor.state} {visitor.country_name} {visitor.postal}</h2>
+		</div>
+		:
+		null
+		}
 		<ReactNotifications />
 		<Layout open={open} setOpen={setOpen}>
 			<BackgroundImage open={open}>
 				<Section open={open}>
-					<Me open={open}/>
+					<Me open={open} />
 				</Section>
 			</BackgroundImage>
 			<Projects open={open}/>
