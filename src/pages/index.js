@@ -24,7 +24,7 @@ const Home = () => {
 		console.log('IP User Data', res.data);
 		setIp(res.data.IPv4)
 		if (res.data.IPv4) {
-			setIPDetected(true)
+			// setIPDetected(true)
 		}
 		return res.data
 	}
