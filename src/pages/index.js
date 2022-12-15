@@ -12,12 +12,18 @@ import 'react-notifications-component/dist/theme.css'
 import 'animate.css/animate.min.css';
 import { Popover } from '@typeform/embed-react'
 import axios from 'axios';
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const Home = () => {
 	const [open, setOpen] = useState(false)
 	const [ip, setIp] = useState(null)
 	const [visitor, setVisitor] = useState(null)
 	const [ipDetected, setIPDetected] = useState(false)
+
+	useEffect(() => {
+		Aos.init({})
+	}, [])
 
 	const getIp = async () => {
 		const res = await axios.get('https://geolocation-db.com/json/')
