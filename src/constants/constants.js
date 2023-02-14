@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: 'ThriveIN',
+    description: "Building a global social platform designed for creatives. Rust smart contracts deployed to the NEAR Protocol to handle freelance workflow and functionality. Using the NEAR API and SDK to interact with smart contracts, store data in the database, and display on the frontend. Magic Authenication and NEAR Wallet sign-in. Web2 backend built with Nest, Prisma, and Typescript. Frontend built with Next, React, and TailwindCSS.",
+    image: '/images/ThriveIN.png',
+    tags: ['Nest', 'Rust', 'NEAR Protocol', 'Next'],
+    source: 'https://thrivein.io/',
+    backendCode: 'https://github.com/ThriveIn/NestJS',
+    frontendCode: 'https://github.com/ThriveIn/www',
+    id: 0,
+  },
+  {
     title: 'CinderBlox',
     description: "Application focussed on tokenization of commercial real estate assets. Developed with the MERN stack, the application features custom multi-factor authetication, KYC and AML financial screening, as well as trading functionality to buy and sell real estate-backed security tokens. Utilized the AlgoSDK to progammatically deploy security tokens onto the Alorand blockchain and built custom logic for buying, selling, and trading the tokens.",
     image: '/images/CinderBlox.png',
